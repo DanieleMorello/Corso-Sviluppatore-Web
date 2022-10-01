@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="description"
+      content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile.">
+    <title>Sviluppo di una pagina web - Blog Develop</title>
+  </head>
+  <body>
+    <a id="menu"></a>
+    <header>
+      <img src="../assets/img/logo.png" alt="Logo">
+      <h1>WebDev - Il blog dei developers</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#articoli">Articoli</a></li>
+          <li><a href="#">Lavora con noi</a></li>
+          <li><a href="#">Contatti</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr>
+
+    <main>
+      <section>
+        <h2>
+          Come creare un template per i post di Mario Rossi - pubblicato il
+          25-10-2020
+        </h2>
+
+        <p>
+          La prima cosa da fare è suddividere in blocchi logici la pagina,
+          separando le parti comuni a tutte le pagine da quelle specifiche
+        </p>
+        <p>Le varie aree saranno quindi suddivise in:</p>
+        <ul>
+          <li>Contenuti di intestazione del tag &lt;header&gt;</li>
+          <li>
+            Contenuti centrali variabili del tag &lt;main&gt; (corpo principale)
+          </li>
+          <li>
+            Contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;
+          </li>
+          <li>Formattazione del codice</li>
+          <li>
+            Il testo dell'articolo dovrà essere formattato per identificare
+            tutte le parti da selezionare con i CSS. Perciò i passi saranno:
+            <ol>
+              <li>
+                Progettare su carta il markup finale, assegnando ad ogni
+                specifico testo il tag appropriato
+              </li>
+              <li>
+                Scrivere l'HTML dai tag esterni a quelli interni e dall'alto
+                verso il basso
+              </li>
+              <li>Applicare gli stili CSS</li>
+              <li>
+                L'applicazione di stili CSS è cresciuta negli anni fino a
+                raggiungere la diffusione pressoché totale
+              </li>
+            </ol>
+          </li>
+        </ul>
+
+        <table> 
+          <tr>
+            <th colspan="2">Diffusione dei CSS</th>
+          </tr>
+          <tr>
+            <th>anno</th>
+            <th>&percnt; di utilizzo</th>
+          </tr>
+          <tr>
+            <td>2000</td>
+            <td>20&percnt;</td>
+          </tr>
+          <tr>
+            <td>2002</td>
+            <td>35&percnt;</td>
+          </tr>
+          <tr>
+            <td>2204</td>
+            <td>45&percnt;</td>
+          </tr>
+          <tr>
+            <td>2008</td>
+            <td>80&percnt;</td>
+          </tr>
+          <tr>
+            <td>2012</td>
+            <td>100&percnt;</td>
+          </tr>
+        </table>
+
+        <p>
+          <em>Un test di validazione potrà essere fatto tramite il tool online
+            apposito</em>
+        </p>
+      </section>
+
+      <!-- Sezione form -->
+      <section>
+        <h2>Vuoi rimanere aggiornato su altre novità del blog?</h2>
+        <form action="../13settembre/php/ricevi.php">
+          <fieldset>
+            <legend>Iscriviti alla nostra newsletter:</legend>
+            <div>
+              Inserisci l'email:
+              <input
+                type="email"
+                id="indirizzo-mail"
+                name="indirizzo-mail"
+                placeholder="inserisci il tuo indirizzo"
+                required>
+            </div>
+
+            <div>
+              <button type="submit">Iscriviti!</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      <a id="articoli"></a>
+      
+      <!-- Sezione articoli -->
+      <aside>
+        <div>
+          <p>
+            <strong>Articoli correlati</strong>
+            <br>
+            Validare il codice HTML<br>
+            Categoria: develop<br>
+            Data: 18-9-2020
+          </p>
+        </div>
+
+        <div>
+          <p>
+            <strong>Correggere la sintassi</strong><br>
+            Categoria: develop<br>
+            Data: 16-9-2020
+          </p>
+        </div>
+
+        <div>
+          <p>
+            <strong>Meno Kb nella pagina</strong>
+            <br>
+            Categoria: ottimizzazione<br>
+            Data: 30-9-2020
+          </p>
+        </div>
+      </aside>
+      <a href="#menu">Torna s&ugrave;</a>
+    </main>
+  
+    <hr>
+
+    <footer>
+      <p>Blog Develop &copy; <time>2022</time></p>
+      <address>
+        Testata online di Mario Rossi, registrata con n.213/2018 con sede in via
+        Luigi Einaudi 2 - Milano. P.IVA 00112233.
+        <a href="mailto:info@blogdevelop.it"> info@blogdevelop.it </a>
+      </address>
+    </footer>
+  </body>
+</html>
